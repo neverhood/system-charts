@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type='text/javascript', src='/javascripts/chart.js')
+    script(type='text/javascript', src='/javascripts/application.js')
+
+  body
+    a(href="/charts/cpu") CPU
+    hr
+    a(href="/charts/mem") MEM
+    hr
+    a(href="/charts/disk") DISK
+    hr
+    a(href="/charts/la") Load Averages
+
+    block content
