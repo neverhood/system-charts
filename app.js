@@ -37,7 +37,7 @@ monitoring.start();
 
 // DB
 var mongo = require('mongoskin');
-var db    = mongo.db("mongodb://localhost:27017/system-monitor", {native_parser:true});
+var db    = mongo.db(monitoring.configuration.mongoUrl, {native_parser:true});
 
 var routes = require('./routes/index');
 var charts = require('./routes/charts');

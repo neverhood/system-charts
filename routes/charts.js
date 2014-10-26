@@ -67,7 +67,7 @@ router.get('/mem', function(req, res) {
             ]
         };
 
-        res.render('charts/mem', { title: 'Memory Usage [free memory]', chartData: JSON.stringify(data) });
+        res.render('charts/mem', { title: 'Memory Usage [memory in use (%)]', chartData: JSON.stringify(data) });
     });
 });
 
@@ -90,7 +90,7 @@ router.get('/disk', function(req, res) {
             ]
         };
 
-        res.render('charts/disk', { title: 'Disk Usage [free space]', chartData: JSON.stringify(data) });
+        res.render('charts/disk', { title: 'Disk Usage [free space (MB)]', chartData: JSON.stringify(data) });
     });
 });
 
